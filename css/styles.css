@@ -78,8 +78,15 @@ button{
     margin-left: 0px;
 }
 /* main */
+.portfolio{
+    margin-top: 94px;
+    margin-bottom: 94px;
+}
 
 /* filter */
+.filter{
+    padding-bottom: 50px;
+}
 .button{
     border-radius: 4px;
     padding: 6px 22px;
@@ -125,6 +132,7 @@ button{
 
 /* hero */
 .hero{
+    margin-bottom: 94px;
     text-align: center;
     background-color: #000000;
 }
@@ -165,7 +173,13 @@ p{
     margin-top: 0;
     margin-bottom: 0;
 }
-
+.indent{
+    margin-bottom: 94px;
+}
+.people{
+    padding-top: 94px;
+    background-color: #F5F4FA;
+}
 .peculiarities .section-title{
     margin-bottom: 10px;
     font-weight: 700;
