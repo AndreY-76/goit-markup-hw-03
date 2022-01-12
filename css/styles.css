@@ -43,7 +43,30 @@ button{
     color: #000000;    
 }
 /* nav */
+.nav-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.main-nav{
+    display: flex;
+    align-items: center;
+}
+.site-nav{
+    display: flex;
+    margin-left: 93px;
+}
+.auth{
+    display: flex;
+}
+.site-nav .item:not(:last-child),
+.auth .item:not(:last-child){
+    margin-right: 50px;
+}
 .site-nav .link{
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
     color: var(--title-text-color);
     font-weight: 500;
     font-size: 14px;
@@ -79,13 +102,13 @@ button{
 }
 /* main */
 .portfolio{
-    margin-top: 94px;
-    margin-bottom: 94px;
+    padding-top: 94px;
+    padding-bottom: 94px;
 }
 
 /* filter */
 .filter{
-    padding-bottom: 50px;
+    margin-bottom: 34px;
 }
 .button{
     border-radius: 4px;
@@ -132,7 +155,6 @@ button{
 
 /* hero */
 .hero{
-    margin-bottom: 94px;
     text-align: center;
     background-color: #000000;
 }
@@ -173,11 +195,16 @@ p{
     margin-top: 0;
     margin-bottom: 0;
 }
+.section-general{
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
 .indent{
     margin-bottom: 94px;
 }
 .people{
     padding-top: 94px;
+    padding-bottom: 94px;
     background-color: #F5F4FA;
 }
 .peculiarities .section-title{
@@ -185,6 +212,7 @@ p{
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
+    text-align: left;
     letter-spacing: 0.03em;
     text-transform: uppercase;
 }
@@ -222,10 +250,15 @@ p{
 
 /* footer */
 .footer{
+    padding-top: 60px;
+    padding-bottom: 60px;
     background-color: var(--background-footer-color);
 }
 .footer .studio{
     color: var(--white-color);
+}
+.address{
+    margin-top: 20px;
 }
 .address a{
     font-size: 14px;
@@ -236,6 +269,7 @@ p{
 }
 .address .mail,
 .address .tel{
+    margin-top: 9px;
     color: var(--footer-color);
 }
 .address .maps{
