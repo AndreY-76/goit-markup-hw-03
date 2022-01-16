@@ -46,7 +46,6 @@ button{
 .nav-header{
     display: flex;
     align-items: center;
-    justify-content: space-between;
 }
 .main-nav{
     display: flex;
@@ -58,6 +57,7 @@ button{
 }
 .auth{
     display: flex;
+    margin-left: auto;
 }
 .site-nav .item:not(:last-child),
 .auth .item:not(:last-child){
@@ -99,16 +99,24 @@ button{
 }
 .page-header{
     margin-left: 0px;
+    border-bottom: 1px solid #ECECEC;
 }
 /* main */
-.portfolio{
+.section{
     padding-top: 94px;
     padding-bottom: 94px;
 }
 
 /* filter */
 .filter{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom: 34px;
+    justify-content: center;
+}
+.filter .item:not(:last-child){
+    margin-right: 8px;
 }
 .button{
     border-radius: 4px;
@@ -123,6 +131,9 @@ button{
     text-decoration: none;
     cursor: pointer;
 }
+.filter .button{
+     max-width: 145px;   
+}
 .filter .button.secondary:hover,
 .filter .button.secondary:focus,
 .button.primary{
@@ -134,8 +145,27 @@ button{
     background-color: var(--background-btn-color);
 }
 /* cards */
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+}
+.cards .item{
+    width: 370px;
+}
+.cards .item:not(:nth-child(3n)){
+    margin-right: 30px;
+}
+.cards .item:not(:nth-last-child(-n+3)){
+    margin-bottom: 30px;
+}
+.cards .content{
+    padding: 20px 24px;
+    border: 1px solid #EEEEEE;
+    border-top: 0;
+    box-sizing: border-box;
+}
 .cards .title{
-    margin-top: 20px;
+    margin-top: 0;
     margin-bottom: 4px;
     color: var(--title-text-color);
     font-weight: 700;
@@ -155,12 +185,17 @@ button{
 
 /* hero */
 .hero{
+    padding-top: 200px;
+    padding-bottom: 200px;
     text-align: center;
     background-color: #000000;
 }
 .hero-title{
     margin-top: 0px;
     margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 696px;
     color: var(--white-color);
     font-weight: 900;
     font-size: 44px;
@@ -179,7 +214,6 @@ button{
     font-weight: 700;
     font-size: 16px;
     line-height: 1.87;
-    display: flex;
     align-items: center;
     letter-spacing: 0.06em;
     text-decoration: none;
@@ -195,17 +229,20 @@ p{
     margin-top: 0;
     margin-bottom: 0;
 }
-.section-general{
-    padding-top: 94px;
-    padding-bottom: 94px;
-}
-.indent{
-    margin-bottom: 94px;
+.feature{
+    padding-bottom: 0;
 }
 .people{
-    padding-top: 94px;
-    padding-bottom: 94px;
     background-color: #F5F4FA;
+}
+.peculiarities{
+    display: flex;
+}
+.peculiarities .item{
+    width: calc((100%-90)/4);
+}
+.peculiarities .item:not(:last-child){
+    margin-right: 30px;
 }
 .peculiarities .section-title{
     margin-bottom: 10px;
@@ -231,8 +268,34 @@ p{
     text-align: center;
     letter-spacing: 0.03em;
 }
+.section-work{
+    display: flex;
+}
+.section-work .item{
+    width: calc((100%-60)/3);
+}
+.section-work .item:not(:last-child){
+    margin-right: 30px;
+}
+img{
+    display: block;
+}
+.command{
+    display: flex;
+}
+.command .item{
+    width: calc((100%-90)/4);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+}
+.command .item:not(:last-child){
+    margin-right: 30px;
+}
+.command .content{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
 .name{
-    margin-top: 30px;
     margin-bottom: 10px;
     color: var(--title-text-color);
     font-weight: 500;
@@ -287,3 +350,15 @@ p{
     padding-left: 15px;
     padding-right: 15px;
 }
+.hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;    
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
