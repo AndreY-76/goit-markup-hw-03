@@ -331,9 +331,11 @@ img{
     text-decoration: none;
     font-style: normal;
 }
-.address .mail,
-.address .tel{
+.address-indent{
     margin-top: 9px;
+}
+.address .mail,
+.address .tel{   
     color: var(--footer-color);
 }
 .address .maps{
